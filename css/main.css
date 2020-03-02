@@ -5,7 +5,8 @@ body {
         display: inline-block;
         width: 90%;
         margin: 0 5%;
-        background-color: aqua;
+        color: #fff;
+        background-color: black;
     }
         .standart-size {
             display: inline-block;
