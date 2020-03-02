@@ -1,8 +1,74 @@
 body {
     width: 100vw;
 }
-.container {
-    display: inline-block;
-    width: 90%;
-    margin: 0 5%;
+    .container {
+        display: inline-block;
+        width: 90%;
+        margin: 0 5%;
+        background-color: aqua;
+    }
+        .standart-size {
+            display: inline-block;
+            width: 1200px;
+            text-align: center;
+            margin: 0 calc(50% - 600px);
+            background-color: red;
+        }
+        .features {
+
+        }
+            .featur-div {
+                display: inline-block;
+                width: 100%;
+            }
+                .featur-div  > div {
+                    display: inline-block;
+                    width: 50%;
+                    float: left;
+                }
+        .how-to {
+            display: inline-block;
+            width: 100%;
+        }
+            .how-to > div {
+                display:inline-block;
+                width: 50%;
+                float: left;
+            }
+        .comments {
+            display: inline-block;
+            width: 100%
+        }
+            .comments > div {
+                display: inline-block;
+                width: calc(100% / 3);
+                float: left;
+            }
+        footer {
+            display: inline-block;
+            width: 100%;
+        }
+    @media (max-width: 1350px) {
+        .standart-size {
+            width: 800px;
+            margin: 0 calc(50% - 400px);
+        }
+    }
+    @media (max-width: 1000px) {
+        .standart-size {
+            width: 600px;
+            margin: 0 calc(50% - 300px);
+        }
+    }
+    @media (max-width: 700px) {
+        .standart-size , 
+        .featur-div  > div ,
+        .how-to > div , 
+        .comments > div {
+            width: 100%;
+            margin: 0 ;
+        }
+        .container {
+          text-align: center;
+    }
 }
