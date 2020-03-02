@@ -12,8 +12,8 @@ body {
             display: inline-block;
             width: 1200px;
             text-align: center;
-            margin: 0 calc(50% - 600px);
-            background-color: red;
+            margin: 50px calc(50% - 600px) 0;
+            
         }
         .features {
 
@@ -73,3 +73,27 @@ body {
           text-align: center;
     }
 }
+        /* HERO */
+ .hero {
+     margin-bottom: 50px;
+    
+ }
+    .hero > img {
+        display: inline-block;
+        width: 100%;
+        margin: 40px 0;
+    }
+        @media (min-width: 1000px) {
+            .hero > img {
+                width: 60%;
+        }
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 45px;
+            line-height: 50px;
+        }
+        p {
+            margin-bottom: 40px;
+            color: #eeee;
+        }
